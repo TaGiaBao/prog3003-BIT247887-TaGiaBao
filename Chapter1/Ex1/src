@@ -19,15 +19,15 @@ class Test<T> {
 
 public class Main {
     public static void main(String[] args) {
-        // Kiểm thử với Integer
+       
         Test<Integer> integerTest = new Test<>();
         integerTest.set(100);
         System.out.println("Giá trị Integer: " + integerTest.get());
 
-        // Kiểm thử với String
+       
         Test<String> stringTest = new Test<>();
-        stringTest.set("Chào mừng bạn đến với NetBeans!");
-        System.out.println("Giá trị String: " + stringTest.get());
+        stringTest.set("Hello!");
+        System.out.println("String: " + stringTest.get());
     }
 }
 
