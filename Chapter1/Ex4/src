@@ -7,32 +7,28 @@ package cmc.edu.vn.chapter4;
 
 import java.util.ArrayList;
 
-public class Main {
+public class Bai4 {
     public static void main(String[] args) {
-        
         ArrayList<String> fruits = new ArrayList<>();
-        fruits.add("Buoi");
-        fruits.add("Oi");
-        fruits.add("Xoai");
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
 
+        fruits.add(1, "Mango");
+        int index = fruits.indexOf("Banana");
 
-        fruits.add(1, "Bom");
-
-     
-        int index = fruits.indexOf("Oi");
         if (index != -1) {
-            fruits.set(index, "Cam");
+            fruits.set(index, "Grapes");
         }
 
-       
-        if (fruits.contains("Tao")) {
-            System.out.println("Tao ton tai.");
+        if (fruits.contains("Apple")) {
+            System.out.println("Apple ton tai.");
         } else {
-            System.out.println("Tao khong ton tai.");
+            System.out.println("Apple khong ton tai.");
         }
 
-      
-        System.out.println("List Fruits: " + fruits);
+        System.out.println("List fruits: " + fruits);
     }
 }
+
 
