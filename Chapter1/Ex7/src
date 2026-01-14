@@ -1,1 +1,15 @@
+package cmc.edu.vn.chapter1;
+import java.util.TreeSet;
+public class Main {
+    public static void main(String[] args) {
+        TreeSet<String> names = new TreeSet<>();
+        names.add("John");
+        names.add("Alice");
+        names.add("Zack");
+        names.add("Bob");
+        System.out.println("List name: " + names);
+        System.out.println("Ten dau tien: " + names.first());
+        System.out.println("Ten cuoi cung: " + names.last());
+    }
+}
 
