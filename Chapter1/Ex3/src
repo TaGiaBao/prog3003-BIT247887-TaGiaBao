@@ -4,12 +4,12 @@
 
 package cmc.edu.vn.chapter3;
 
-
+//1.
 interface Pair<K, V> {
     K getKey();
     V getValue();
 }
-
+//2.
 class OrderedPair<K, V> implements Pair<K, V> {
     private K key;
     private V value;
