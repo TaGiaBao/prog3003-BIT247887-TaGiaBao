@@ -1,1 +1,31 @@
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package cmc.edu.vn.chapter2;
+
+public class Main{
+    
+    public static <E> void printArray(E[] inputArray) {
+        
+        for (E element : inputArray) {
+            System.out.printf("%s ", element);
+        }
+        System.out.println(); 
+    }
+
+ 
+    public static void main(String[] args) {
+       
+        Integer[] intArray = {1, 2, 3, 4, 5};
+       
+        String[] stringArray = {"Oi", "Cuoc", "Doi", "Chan", "Qua"};
+
+        System.out.println("Mang Integer bao gom:");
+        printArray(intArray); 
+
+        System.out.println("\nString bao gồm:");
+        printArray(stringArray);
+    }
+}
