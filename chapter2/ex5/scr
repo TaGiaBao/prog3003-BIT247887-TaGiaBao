@@ -18,7 +18,7 @@ class SMSService implements MessageService {
 class Notification {
     private MessageService service;
 
-    // Setter Injection
+    
     public void setService(MessageService service) {
         this.service = service;
     }
@@ -32,12 +32,12 @@ public class Bai5 {
     public static void main(String[] args) {
         Notification note = new Notification();
 
-        // Inject Email
+        
         note.setService(new EmailService());
-        note.send("Chào mừng đến với hệ thống!");
+        note.send("Hello World!");
 
-        // Inject SMS
+        
         note.setService(new SMSService());
-        note.send("Mã xác thực của bạn là 9999");
+        note.send("Ma: 9999");
     }
 }
